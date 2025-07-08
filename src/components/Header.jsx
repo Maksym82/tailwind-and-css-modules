@@ -2,13 +2,17 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
-    <>
-      <h1 className="flex mb-5 text-4xl text-red-600 ">Header</h1>
-      <NavLink to={"/"}>Home</NavLink>
-      <NavLink to={"/about"}>About</NavLink>
-      <NavLink to={"/cart"}>Cart</NavLink>
-      <hr />
-    </>
+
+    <header className="px-5 py-8 bg-blue-200">
+      <img className="h-6" src="/logo.svg" alt="logo" />
+      <nav>
+        <ul>
+          <li><NavLink to={"/"}>Home</NavLink></li>
+          <li><NavLink to={"/about"}>About</NavLink></li>
+          <li><NavLink to={"/cart"}>Cart</NavLink></li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 
