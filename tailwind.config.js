@@ -15,9 +15,9 @@ export default {
         primary: "#3F32F6",
         secondary: "#1E3A8A",
       },
-      // fontFamily: {
-      //   poppins: "poppins, sans-serif",
-      // },
+      fontFamily: {
+        poppins: "poppins, sans-serif",
+      },
       // keyframes: {
       //   wiggle: {
       //     "0%, 100%": { transform: "rotate(-3deg)" },
