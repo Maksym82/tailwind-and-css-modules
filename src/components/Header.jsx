@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import NavMenuLink from "../UI/NavLinkMenu";
 
 function Header() {
   return (
@@ -7,13 +7,20 @@ function Header() {
       <img className="h-6" src="/logo.svg" alt="logo" />
       <nav>
         <ul className="flex space-x-8">
-          <li className=""><NavLink className="font-semibold" to={"/"}>Home</NavLink></li>
-          <li className=""><NavLink className="font-semibold" to={"/about"}>About</NavLink></li>
-          <li className=""><NavLink className="font-semibold" to={"/cart"}>Cart</NavLink></li>
+          <li>
+            <NavMenuLink to={"/"}>Home</NavMenuLink>
+          </li>
+          <li>
+            <NavMenuLink to={"/about"}>About</NavMenuLink>
+          </li>
+          <li>
+            <NavMenuLink to={"/cart"}>Cart</NavMenuLink>
+          </li>
+
         </ul>
       </nav>
     </header>
-  );
+  )
 }
 
 export default Header;
