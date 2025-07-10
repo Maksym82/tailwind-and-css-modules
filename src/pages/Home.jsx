@@ -13,7 +13,7 @@ function Home() {
         {categories.map((category) => (
           <li key={category.id}>
             <Link className="relative flex flex-col items-center justify-center group" to={`/category/${category.name}`}>
-              <span className="absolute z-10 text-xl font-semibold text-white transition-all group-hover:text-red-600 group-hover:text-2xl">{category.name}</span>
+              <span className="absolute z-10 text-xl font-semibold text-white transition-all group-hover:text-pink-950 group-hover:text-2xl animate-wiggle">{category.name}</span>
               <img className="rounded-md" src={category.img} alt={category.name} />
               <div className="absolute inset-0 rounded-md bg-gray-950 opacity-40 bg-custom-gradient"></div>
             </Link>

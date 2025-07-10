@@ -1,4 +1,3 @@
-import React from "react";
 
 function Cart() {
   const handleSubmit = (e) => {
@@ -32,8 +31,8 @@ function Cart() {
 
         {/* Поле Name */}
         <div>
-          <input id="name" type="text" placeholder="Enter your full name" required />
-          <label htmlFor="name">Name</label>
+          <input className="peer" id="name" type="text" placeholder="Enter your full name" required />
+          <label className="peer-hover:text-blue-600" htmlFor="name">Name</label>
         </div>
 
         {/* Поле Email */}
