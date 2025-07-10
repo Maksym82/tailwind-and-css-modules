@@ -6,28 +6,28 @@ function Cart() {
   };
 
   return (
-    <div>
-      <h1>Shopping Cart</h1>
+    <div className="max-w-md p-5 mx-auto">
+      <h1 className="mb-6 text-xl font-bold text-center">Shopping Cart</h1>
 
       {/* Список товаров */}
-      <div>
-        <h2>Your Items:</h2>
-        <ul>
-          <li>
+      <div className="mb-8 ">
+        <h2 className="mb-4 text-lg font-semibold">Your Items:</h2>
+        <ul className="space-y-2">
+          <li className="flex items-center justify-between pb-2 border-b">
             <span>Product 1</span>
             <span>$25</span>
           </li>
-          <li>
+          <li className="flex items-center justify-between pb-2 border-b">
             <span>Product 2</span>
             <span>$45</span>
           </li>
         </ul>
-        <p>Total: $70</p>
+        <p className="mt-4 font-medium">Total: $70</p>
       </div>
 
       {/* Форма */}
-      <form onSubmit={handleSubmit}>
-        <h2>Enter Your Details:</h2>
+      <form onSubmit={handleSubmit} className="space-y-5">
+        <h2 className="text-lg">Enter Your Details:</h2>
 
         {/* Поле Name */}
         <div>
