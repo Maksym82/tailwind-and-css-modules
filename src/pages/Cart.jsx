@@ -6,7 +6,7 @@ function Cart() {
   };
 
   return (
-    <div className="max-w-md p-5 mx-auto">
+    <div className="max-w-md px-5 py-16 mx-auto">
       <h1 className="mb-6 text-xl font-bold text-center">Shopping Cart</h1>
 
       {/* Список товаров */}
@@ -30,31 +30,32 @@ function Cart() {
         <h2 className="text-lg">Enter Your Details:</h2>
 
         {/* Поле Name */}
-        <div>
-          <input className="peer" id="name" type="text" placeholder="Enter your full name" required />
-          <label className="peer-hover:text-blue-600" htmlFor="name">Name</label>
+        <div className="flex flex-col-reverse">
+          <input className="p-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 peer" id="name" type="text" placeholder="Enter your full name" required />
+          <label className="text-sm text-gray-500 peer-placeholder-shown:text-gray-400 peer-focus:text-blue-500" htmlFor="name">Name</label>
         </div>
 
         {/* Поле Email */}
-        <div>
-          <input id="email" type="email" placeholder="Enter your email address" required />
-          <label htmlFor="email">Email</label>
+        <div className="flex flex-col-reverse">
+          <input className="p-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 peer" id="email" type="email" placeholder="Enter your email address" required />
+          <label className="text-sm text-gray-500 peer-placeholder-shown:text-gray-400 peer-focus:text-blue-500" htmlFor="email">Email</label>
         </div>
 
         {/* Поле Address */}
-        <div>
+        <div className="flex flex-col-reverse">
           <textarea
+            className="p-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 peer"
             id="address"
             placeholder="Enter your delivery address"
             rows="3"
             required
           ></textarea>
-          <label htmlFor="address">Address</label>
+          <label className="text-sm text-gray-500 peer-placeholder-shown:text-gray-400 peer-focus:text-blue-500" htmlFor="address">Address</label>
         </div>
 
         {/* Поле Payment */}
-        <div>
-          <select id="payment" required>
+        <div className="flex flex-col-reverse">
+          <select className="p-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 peer" id="payment" required>
             <option value="" disabled>
               Select payment method
             </option>
@@ -62,11 +63,13 @@ function Cart() {
             <option value="paypal">PayPal</option>
             <option value="cash">Cash on Delivery</option>
           </select>
-          <label htmlFor="payment">Payment Method</label>
+          <label className="text-sm text-gray-500 peer-focus:text-blue-500" htmlFor="payment">
+            Payment Method
+          </label>
         </div>
 
         {/* Кнопка Submit */}
-        <button type="submit">Place Order</button>
+        <button className="w-full px-4 py-2 text-sm text-white bg-blue-500 rounded-md hover:bg-blue-600" type="submit">Place Order</button>
       </form>
     </div>
   );
