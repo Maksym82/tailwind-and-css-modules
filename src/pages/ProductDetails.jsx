@@ -20,7 +20,7 @@ function ProductDetails() {
           </div>
         </>
       ) : (
-        <p className="text-xl font-bold text-center text-red-500">Not Found</p>
+        <p className="text-2xl font-bold text-center text-red-700">Not Found</p>
       )}
     </div>
   );
