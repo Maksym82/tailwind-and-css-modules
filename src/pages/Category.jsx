@@ -38,7 +38,7 @@ function Category() {
         {currentCategoryArray.map((product) => (
           <li key={product.name}>
             <Link className="relative flex flex-col items-center justify-center group" to={`/product/${product.id}`}>
-              <span className="absolute z-10 text-xl font-semibold text-white transition-all group-hover:text-2xl">{product.name} {product.price}$</span>
+              <span className="absolute z-10 text-2xl font-semibold text-white transition-all group-hover:text-3xl">{product.name} {product.price}$</span>
               <img className="rounded-md" src={product.img} alt={product.name} />
               <div className="absolute inset-0 bg-gray-900 rounded-md opacity-40"></div>
             </Link>
